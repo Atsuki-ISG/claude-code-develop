@@ -1,1 +1,1 @@
-# claude-code-writer
+# claude-code-develop
