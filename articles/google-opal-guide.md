@@ -835,73 +835,73 @@ AIツールの世界は、日々進化しています。Google Opalも、これ�
 
 この記事は、以下の情報源を参考にして作成しました：
 
-### 公式情報・技術記事
+### 基本情報・使い方
 
-1. [Opal のご紹介: AI ミニアプリの記述、作成、共有 - Google Developers Blog](https://developers.googleblog.com/ja/introducing-opal/)
-   - Googleの公式発表、Opalの基本概念と特徴
+1. [Googleのノーコードツール「Opal」の基本から使い方を完全解説｜Dify Base](https://note.com/dify_base/n/ndead35f97204) - note.com
+   - 参考にした内容：Opalの基本概念、使い方の全体像
 
-2. [Google Opalの使い方｜ノーコードでAIミニアプリを最短で作成する方法](https://www.dsk-cloud.com/blog/how-to-use-google-opal)
-   - 具体的な使い方、アカウント登録から実践まで
+2. [Google Opal の概要｜npaka](https://note.com/npaka/n/n6baefe7dd1d5) - note.com
+   - 参考にした内容：Opalの技術的な概要と特徴
 
-3. [Google から登場した新 AI サービス「Opal」とは？ 特徴・できること・類似サービスとの違いを徹底解説](https://discoveries.co.jp/columns/opal/)
-   - Opalの特徴と他サービスとの違い
+3. [Opal のクイックスタート｜npaka](https://note.com/npaka/n/ncde2447c74f0) - note.com
+   - 参考にした内容：具体的な始め方とクイックスタート手順
 
-4. [Google のノーコード AI ミニアプリケーション構築ツール Opal を試す](https://sight-r.sts-inc.co.jp/google_cloud_article/opal-introducing/)
-   - 実際の使用例と具体的な操作方法
+4. [Google開発ツール『Opal』とは？使い方・料金を徹底解説｜株式会社AIworker](https://note.com/ai__worker/n/n9641f8c8d26d) - note.com
+   - 参考にした内容：料金体系、機能詳細
 
-### 使い方・活用事例
+5. [【日本でも公開】Google Opalで作る簡単AIアプリ入門｜ジーアイクラウド株式会社](https://note.com/gicloud/n/n6b3a5cd3198a) - note.com
+   - 参考にした内容：日本での提供開始情報、初心者向け解説
 
-5. [Googleノーコードアプリ開発ツール「Opal」が日本で使えるようになったので調査](https://blog.elcamy.com/posts/bb29c346/)
-   - 日本での提供開始に関する情報、制限事項の詳細
+### 活用例・実践
 
-6. [GoogleのOpal（オパール）とは？使い方から機能、ツール比較を詳しく解説](https://aismiley.co.jp/ai_news/google-opal-for-developers-n8n/)
-   - n8nとの比較、活用事例
+6. [生成AI Google Opal ノーコードでAIエージェントを作ってみよう｜ひつじ｜AIをわかりやすく](https://note.com/hitsuji_fire/n/n461b43c8435d) - note.com
+   - 参考にした内容：実際のAIエージェント作成例
 
-7. [【Google】Opalとは？主要機能や使い方、料金体系をわかりやすく解説！](https://www.ai-souken.com/article/what-is-google-opal)
-   - 主要機能、料金体系、将来展望
+7. [『Opal』で Google の神々を組み合わせて "最強のAIアシスタント" にする方法｜建築ビジュアルCG × AI活用法㊹｜One More Vision](https://note.com/onemorevision/n/n308a7bf7b65e) - note.com
+   - 参考にした内容：高度な活用例、Google AI統合
 
-8. [GoogleのOpal（オパール）とは？使い方・できることをやさしく解説](https://fragments.co.jp/blog/google-opal-howto/)
-   - 初心者向けの解説、できること・できないこと
+8. [Google Opalとは？ AIミニアプリを「会話」で作るノーコードツールを発見！ #バイブコーディング - Qiita](https://qiita.com/JavaLangRuntimeException/items/ada3b28c00bdd46f2125) - qiita.com
+   - 参考にした内容：バイブコーディングの概念、会話的な開発手法
 
-9. [【プログラミング不要】GoogleのAIツール「Opal」～使い方からミニアプリ作成まで解説～](https://itport.cloud/?p=22121)
-   - プログラミング不要でのアプリ作成手順
+9. [Google Opalを使ってみました 実験した事のみ記載｜のんびり](https://note.com/laidback_jp/n/nda449fb64ae3) - note.com
+   - 参考にした内容：実際の使用感、実験結果
 
-10. [Google開発ツール『Opal』とは？使い方・料金を徹底解説](https://note.com/ai__worker/n/n9641f8c8d26d)
-    - 料金体系、今後の展望
+10. [【徹底解説】Googleの新ツール「Opal」とは？ プログラミング不要で誰でもAIアプリが作れる未来｜まさお@未経験からプロまでAI活用](https://note.com/masa_wunder/n/nd06a8aa054f4) - note.com
+    - 参考にした内容：初心者向けの全体像、将来展望
 
 ### n8n・Difyとの比較
 
-11. [ノーコードで会話型AIフローを設計「Google Opal」- Dify・n8nとも比較](https://www.spinflow.jp/news/ノーコードで会話型AIフローを設計「Google_Opal」__Dify・n8nとも比較)
-    - 3ツールの詳細な比較、導入戦略
+11. [【Agent Builder, Opal, Dify, n8n】ノーコードAIツールの比較 ｜岸田 崇志@Omluc](https://note.com/conaxam/n/n2d33b9825488) - note.com
+    - 参考にした内容：4つのツールの詳細な機能比較
 
-12. [【Agent Builder, Opal, Dify, n8n】ノーコードAIツールの比較](https://omluc.com/blog/oiuygrfh)
-    - 複数ツールの機能比較表
+12. [【ざっくり概要】 Dify、n8n、Microsoft Agent Framework、Google AI Opal、OpenAI Agent Builder徹底比較 - 社内AI自動化ツールの選び方 #n8n.io - Qiita](https://qiita.com/satoshissss/items/a908b3bae8f251aa4f4d) - qiita.com
+    - 参考にした内容：複数ツールの比較表、導入戦略
 
-13. [【衝撃】Google発「Opal（オパール）」の可能性：ノーコードでAIアプリが作れる時代へ](https://note.com/renkon40/n/n4e4b56e641b9)
-    - Opalの可能性と将来展望
+13. [【徹底比較】Googleの新AI開発ツール「Opal」とは？非エンジニアでも直感的にAIアプリを作れる！｜Dify・n8nとの違いをわかりやすく解説｜株式会社LeapAI](https://note.com/leapai/n/n2f4feb8ae2a1) - note.com
+    - 参考にした内容：Dify、n8nとの具体的な違い
 
-14. [【爆誕】Google版Dify「Opal」とは？使い方から料金、事例まで専門家が徹底解説](https://yoshikazunomori.com/blog/digitalmarketing/what-is-opal/)
-    - Difyとの詳細比較、活用事例
+14. [うさぎでもわかる🐰Google Opal vs Dify - ノーコードAIプラットフォーム徹底比較｜taku_sid🐰エージェント](https://note.com/taku_sid/n/n51b23f0554e1) - note.com
+    - 参考にした内容：初心者向けのOpal vs Dify比較
 
-15. [Googleが公開した新AIツール「Opal」とは？特徴や使い方、活用事例を徹底解説](https://shift-ai.co.jp/blog/32272/)
-    - 活用事例、ユースケース別の解説
+15. [Difyとn8nの違いを徹底解説！AIワークフローツール比較ガイド【2025最新版】 #LLM - Qiita](https://qiita.com/homula_ai/items/c956c4df5bd3d22de3ed) - qiita.com
+    - 参考にした内容：DifyとN8nの詳細比較、AIワークフロー設計
 
 ### その他の参考記事
 
-16. [Google Opal（オパール）：ノーコードAIミニアプリ作成ツールの使い方入門](https://zenn.dev/densan_techblog/articles/9fbd72c86becda)
-    - 技術者向けの詳細解説
+16. [【衝撃】Google発「Opal（オパール）」の可能性：ノーコードでAIアプリが作れる時代へ｜れん学長のAIビジネスラボ](https://note.com/renkon40/n/n4e4b56e641b9) - note.com
+    - 参考にした内容：Opalの可能性と将来展望
 
-17. [ノーコードで独自のミニAIアプリが作れちゃう、Google「Opal」の使い方](https://k-tai.watch.impress.co.jp/docs/column/teppan/2055164.html)
-    - 一般ユーザー向けの使い方解説
+17. [Googleの新サービス「Opal」を徹底解説！ログインから使い方、日本での利用まで初心者にも分かりやすく｜なり](https://note.com/kazu_fuwa/n/n015973df42af) - note.com
+    - 参考にした内容：ログイン方法、初期設定
 
-18. [Google Opalとは？使い方、料金、日本での利用開始方法を解説](https://taskhub.jp/useful/google-opal/)
-    - 日本での利用開始方法、料金体系
+18. [Google発ノーコードツール「Opal」とは？解説と実演｜株式会社AIworker](https://note.com/ai__worker/n/n945fcd4c2b80) - note.com
+    - 参考にした内容：実演を通じた機能解説
 
-19. [ノーコードでAIミニアプリ作成できるツール「Opal」、日本でも利用可能に](https://gihyo.jp/article/2025/10/opal)
-    - 日本提供開始のニュース
+19. [【Gemini搭載】Google Opalでノーコード開発が鬼簡単になっちまった｜王子のAIラボ～AIディレクターZEN～](https://note.com/maruking777/n/n54112fd0bf8e) - note.com
+    - 参考にした内容：Gemini統合の利点、開発の容易さ
 
-20. [Google Opal完全解説！チャットだけでAIワークフローを構築](https://chatgpt-lab.com/n/nb6c2ea5a272b)
-    - チャット形式でのワークフロー構築方法
+20. [GoogleのOpal完全ガイド｜ノーコード／ローコードツール｜やきいも | 週1クリエイトでメシを食う！](https://note.com/yakiimo_blog/n/nbe40a6587ae6) - note.com
+    - 参考にした内容：完全ガイドとしての総合的な解説
 
 ---
 
