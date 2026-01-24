@@ -1,0 +1,129 @@
+# 自動化を習慣化する「不快メモ」のススメ
+
+自動化を習慣化するのは難しいことです。
+弊チャンネルでは自動化の民主化を掲げて日々AI活用の情報を発信しているわけですが、そんな私でも、「これもっと早く自動化しとけばよかったなぁ、なんでずっと手動でやってたんだろう」みたいな気持ちになることは多々あります。
+
+## 自動化から気持ちが遠ざかってしまう理由
+* **How（やり方）を知らない**: どう自動化すればいいかわからない。
+* **コストの予感**: 実現できそうなイメージはあるが、時間がかかりそうな気がする。
+* **多忙**: シンプルに忙しく、着手する暇がない。
+
+ですが、後から振り返ると「実はやり方を知っていた」とか「やってみたら意外と簡単だった」ということがほとんどです。むしろ、**さっさと自動化しなかったことで、より忙しくなっていた**という側面もあります。
+
+つまり、手法を学ぶこと以上に、**「自動化に取り組むこと」自体を自動化する仕組み**が必要です。そこで始めたのが、最近実践している**「不快メモ」**という取り組みです。
+
+---
+
+## 不快メモとは
+「不快メモ」とは、その名の通り、日々の業務で**「めんどくさい」「不快だ」と感じた瞬間にそれをメモしていく**手法です。
+
+### メモの例
+* 音声入力後の校正がめんどい
+* 領収書(物理)の管理がめんどい
+* Claude Codeの起動になぜか時間がかかる
+* AIを待っている間についXやYouTube Studioを見てしまう
+* 自分の動画のURLを概要欄に持ってくるのめんどい
+
+### メモを置く場所
+後々自動化のトリガーにしやすい場所が理想的です。
+* **GitHubのイシュー**（おすすめ）
+* スプレッドシート
+* Notionのテーブル
+* Slackなどのチャットアプリ
+
+> **ポイント**: 
+> 実際に自動化できるかどうかは一切考えず、入力のハードルを可能な限り下げることが重要です。
+
+---
+
+## 入力を加速させるツール
+
+### Raycastによる1行投稿
+私はRaycastで独自のコマンドを作成し、1行入力するだけでGitHub Issueに追加されるようにしています。
+
+```bash
+#!/bin/bash
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title fukai-memo
+# @raycast.mode silent
+# @raycast.argument1 {"type":"text","placeholder":"追加するメモ（1行）"}
+
+REPO="kazuyaseki/nandemo-automation"
+TITLE="${1:-}"
+
+[[ -z "$TITLE" ]] && { echo "タイトルが空です"; exit 1; }
+
+gh issue create --repo "$REPO" --title "$TITLE" --body "本文なし"
+```
+
+### 音声入力の活用
+ディテールを補足する際は、音声入力が便利です。私は **Aqua Voice** を活用して、AIに内容を整えてもらいながらメモしています。
+
+---
+
+## 発展編：AIに解決策を提案・実装してもらう
+
+メモを取るだけでなく、AIが勝手に解決策を考えてくれる状態を作ります。今回は、GitHubのイシューをトリガーに **Claude Code** をGitHub Actionsで動かす仕組みを紹介します。
+
+### 1. 準備するもの
+* 自動化スクリプト保存用のリポジトリ（例: `nandemo-automation`）
+* Claude Code（Anthropic社のコーディングツール）
+
+### 2. GitHub Actionsの設定
+イシューが作成された時に、Claude Codeが解決策を提案したり、そのままプルリクエストを作成したりするワークフローを作成します。
+
+`.github/workflows/issue_solver.yml`
+```yaml
+name: Issue Solver
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  solve:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Claude Code for Issue Solving
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            あなたは優秀なエンジニアです。以下のIssueを読み、解決策を提案・実装してください。
+            - カテゴリA: AIのAPIが必要（プロンプトのみ作成）
+            - カテゴリB: 自己完結型（コード実装しPR作成）
+            - カテゴリC: 情報不足（質問をコメント）
+          # 権限や引数の設定...
+```
+
+### 実際の挙動
+このように設定すると、イシューを立てるだけでAIが以下のように動いてくれます。
+1.  内容を分析し、解決用のスキル（プロンプト）を作成。
+2.  必要であれば簡単なWebアプリやスクリプトを実装。
+3.  要件が曖昧な場合はチェックボックス形式で質問。
+
+---
+
+## もっと手軽に始めるには
+
+GitHub Actionsが難しいと感じる場合は、以下の方法もおすすめです。
+
+1.  **Claude Code in Slack**: Slackアプリとして導入し、チャットベースで依頼する。
+2.  **Jules (Google)**: GitHub Issueに `jules` ラベルを付けるだけで、AIが自動で課題解決に動いてくれる。
+
+## 最後に
+不快メモは、「何が不満か」を可視化するだけでも大きな価値があります。AIが完璧な答えを出せなくても、課題が管理されていることで、いつか「腰を据えて解決しよう」というきっかけになります。
+
+ぜひ、皆さんも自分なりの「自動化の自動化」を試してみてください！
